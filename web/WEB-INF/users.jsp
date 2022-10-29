@@ -1,10 +1,6 @@
-<%-- 
-    Document   : users
-    Created on : Oct 28, 2022, 11:59:22 AM
-    Author     : Xyrille
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,9 +9,25 @@
     </head>
     <body>
         <h1>Manage User</h1>
-        <div>
-            
-        </div>
+        
+        <table>
+            <tr>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Role</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>${message}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
         <h2>Add User</h2>
         <form method="post" action="user">
             Email: <input type="text" name="email" value=""><br>
